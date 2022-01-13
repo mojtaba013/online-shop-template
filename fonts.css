@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'BNazanin.ttf';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/BNazanin.ttf');
+}
+
+@font-face {
+    font-family: 'BNazanin.ttf';
+    font-weight: 700;
+    font-style: normal;
+    src: url('fonts/BNazanin.ttf');
+}
+
+body,button{
+    font-family: 'BNazanin.ttf';
+}

@@ -1,0 +1,260 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+:root {
+    --color-btn: rgb(140, 113, 190);
+    --color-body: #333333;
+    --clore-boxbackgroun: #a8c0f1;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 2rem;
+}
+
+
+body {
+    color: var(--color-body);
+}
+
+/* BUTTON */
+
+.btn {
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: var(--color-btn);
+}
+
+/* BOX-CART */
+
+.block-plan {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: var(--clore-boxbackgroun);
+
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.box img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 15rem;
+
+}
+
+
+.box .footerbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.2rem 0.1rem;
+    align-items: center;
+}
+
+@media screen and (min-width:1024px) {
+    .block-plan {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .block-plan {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* NAVBAR */
+
+.main-header {
+    background-color: #d4d0d0;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+
+}
+
+.login__cart {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 10px;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    gap: 5rem;
+    top: 0;
+    align-items: flex-start;
+
+}
+
+.login__cart .basket {
+    padding: 1rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.login img {
+    width: 50px;
+    height: 20px;
+    /* align-items: center; */
+
+}
+
+.signin {
+
+    font-size: 1.2;
+    /* padding-bottom: 0.5rem; */
+}
+
+/* .badge {
+    padding:0 5px 5px 0;  
+    border-radius: 5px;
+  } */
+[badge]:after {
+    background: red;
+    border-radius: 30px;
+    color: #fff;
+    content: attr(badge);
+    font-size: 11px;
+    margin: 5px 8px;
+    min-width: 20px;
+    padding: 0.1rem 0;
+    position: absolute;
+    text-align: center;
+    vertical-align: top;
+    top: 0;
+}
+
+[badge^="-"]:after,
+[badge="0"]:after,
+[badge=""]:after {
+    display: none;
+}
+
+.CartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px;
+    border-radius: 7px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.nav.nav__expanded .nav__list {
+    max-height: 100vh;
+
+    opacity: 1;
+}
+
+.nav__item {
+    display: block;
+}
+
+.nav__item>a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width:768px) {
+    .nav__list {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        opacity: 1;
+        max-height: 100%;
+    }
+
+    .nav__item {
+        margin-left: 2rem;
+    }
+
+    .nav__item>a {
+        font-size: 1.4rem;
+    }
+
+    .nav__toggler {
+        display: none;
+    }
+}
+
+/* TOGGLER */
+.nav__toggler {
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    background-color: #000;
+    transition: all 0.4s ease-out;
+}
+
+.nav.nav__expanded .bar-one {
+    transform: rotate(-45deg) translate(-8px, 5px);
+    margin: 8px 0;
+}
+
+.nav.nav__expanded .bar-two {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.nav.nav__expanded .bar-three {
+    transform: rotate(45deg) translate(-5px, -9px);
+}
