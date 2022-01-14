@@ -109,7 +109,6 @@ body {
     gap: 5rem;
     top: 0;
     align-items: flex-start;
-
 }
 
 .login__cart .basket {
@@ -131,17 +130,31 @@ body {
 
 }
 
-.signin {
-
+ .signin {
+text-decoration: none;
     font-size: 1.2;
     /* padding-bottom: 0.5rem; */
 }
+a{
+    text-decoration: none;
+}
 
-/* .badge {
-    padding:0 5px 5px 0;  
-    border-radius: 5px;
-  } */
-[badge]:after {
+.fas{
+    padding-top: 0.7rem;
+}
+
+.badge{
+    background-color: red;
+    font-size: 0.75rem;
+    padding: 0.1rem 0.5rem ;
+    vertical-align: top;
+    margin: 1rem -2.3rem ;
+   
+    border-radius: 100%;
+    
+    
+}
+/* [badge]:after {
     background: red;
     border-radius: 30px;
     color: #fff;
@@ -152,26 +165,16 @@ body {
     padding: 0.1rem 0;
     position: absolute;
     text-align: center;
-    vertical-align: top;
-    top: 0;
+    top:0.4rem;
+    
 }
 
 [badge^="-"]:after,
 [badge="0"]:after,
 [badge=""]:after {
     display: none;
-}
+} */
 
-.CartCount {
-    font-size: 12px;
-    background: #ff0000;
-    color: #fff;
-    padding: 0 5px;
-    vertical-align: top;
-    margin-left: -10px;
-    border-radius: 7px;
-
-}
 
 .nav {
     display: flex;
