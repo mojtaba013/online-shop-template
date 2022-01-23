@@ -12,33 +12,33 @@
   --color-body: #333333;
   --clore-boxbackgroun: #a8c0f1;
 }
-html{
+html {
   font-size: 62.5%;
   color: var(--color-body);
 }
 
-body{
+body {
   font-size: 1.4rem;
 }
 
-h1{
+h1 {
   font-size: 2.5;
 }
 
-h2{
+h2 {
   font-size: 2.2rem;
 }
 
-@media screen and (min-width:1024px) {
-  body{
+@media screen and (min-width: 1024px) {
+  body {
     font-size: 1.8rem;
   }
 
-  h1{
+  h1 {
     font-size: 5rem;
   }
 
-  h2{
+  h2 {
     font-size: 3.5rem;
   }
 }
@@ -164,7 +164,7 @@ a {
   margin: 1rem -2.3rem;
   color: #fff;
   border-radius: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav {
@@ -253,108 +253,7 @@ a {
   transform: rotate(45deg) translate(-5px, -9px);
 }
 
-/* CART PAGE */
-.container{
-  display: flex;
-  flex-direction: row;  
-  background-color: rgb(219, 223, 215);
-}
-
-.box1{
-  display: grid;
-  grid-template-rows: 20fr 30fr;
-  grid-template-areas:
-  "pic description" 
-  "footer footer "
-  ;
-  gap: 1rem;
-  background-color: rgb(184, 196, 172);
-  width: 75%;
-  height: 30rem;
-  padding: 1rem ;
-  margin: 2rem 4rem 2rem 0.5rem;
-  border-radius: 10px;
-  
-}
-
-.item1{
-  grid-area:pic ;  
-  background-color: rgb(71, 167, 167);
-  margin-bottom: 0;
-}
-
-.item1 img{
-  /* object-fit: contain; */
-  width: 300px;
-  height: 208px;
-}
-.item2{
-  grid-area: description;
-  padding: 1rem;
-  background-color: rgb(230, 167, 96); 
-  
-}
-
-.item3{
-  border-top: 2px solid #505252;
-  grid-area: footer;
-  
-}
-
-.quantity{
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  
-  justify-content: center;
-  background-color: cadetblue;
-  border-radius: 0.5rem;
-  /* border:solid 1px rgba(179, 173, 173, 0.315); */
-  width:10rem;
-  height: 4rem;
-  
-}
-
-.minus{
-  width:3rem ;
-  border:0;
-  border-radius:0 0.5rem 0.5rem 0;
-  
-}
-
-.count{  
-  max-width: 4rem;
-  margin: 0;
-  text-align: center;
-  border: 1px solid #7f8383;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-.plus{
-  width: 3rem;
-  border: 0;
-  border-radius: 0.5rem 0 0 0.5rem;
-}
 
 
 
-.box2{
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(139, 171, 231);
-  width: 25%;
-  height: 300px;
-  padding: 1rem;
-  margin: 2rem 0 0.5rem 4rem;
-  border-radius: 10px;
-}
 
-@media screen and (max-width:768px){
-  .container{
-    flex-direction: column;
-  }
-  .box2{
-    width: 100%;
-  }
-}
