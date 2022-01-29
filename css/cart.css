@@ -44,8 +44,7 @@
   grid-area: description;
   display: flex;
   flex-direction: column;  
-  padding: 1rem;
-  background-color: rgb(230, 167, 96);
+  padding: 1rem; 
 }
 
 .item3-counter {
@@ -146,14 +145,48 @@ display: block;
 
   .product_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
-      "pic description description "
-      "counter price trash";
+    "pic description description description"
+    "pic description description description"
+    "pic counter trash price" 
+    ;  
     gap: 0.5rem;
     background-color: rgb(247, 243, 243);    
     padding: 1rem;    
     border-radius: 0.5rem;
   }
 }
+@media screen and (max-width:480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+
+  .product_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows:1fr 1fr; */
+    grid-template-areas:
+      "pic pic description description description"
+      "pic pic description description description"
+      /* "counter counter description description description" */
+      
+     ". . counter price trash"   
+      ;
+    
+    /* background-color: rgb(247, 243, 243);     */
+    padding: 1rem;    
+    border-radius: 0.5rem;
+  }
+}
+
+
+
+
+
+

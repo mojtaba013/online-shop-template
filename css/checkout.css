@@ -1,0 +1,90 @@
+.main {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(1fr));
+
+  grid-template-areas:
+    "first"
+    "second"
+    "third";
+}
+
+.first {
+  grid-area: first;
+  border: 1px solid rgb(151, 150, 150);
+  border-radius: 0.5rem;
+
+  line-height: 0;
+}
+
+.first > p,
+.second > p {
+  padding: 0.5rem;
+}
+
+.second {
+  grid-area: second;
+  border: 1px solid rgb(151, 150, 150);
+  border-radius: 0.5rem;
+
+  line-height: 0;
+}
+
+.third {
+  grid-area: third;
+  border: 1px solid rgb(151, 150, 150);
+  border-radius: 0.5rem;
+
+  padding: 1rem;
+}
+
+.third button {
+  width: 100%;
+  background-color: rgb(121 56 242);
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  font-family: inherit;
+}
+
+.name,
+.email,
+.mobile,
+.product,
+.course,
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.product,
+.total {
+  padding-bottom: 0;
+  margin: 0 1rem 0 1rem;
+
+  border-bottom: 1px solid rgb(151, 150, 150);
+}
+.course {
+  margin: 0 1rem 0 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .name,
+  .email,
+  .mobile {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "first first first second"
+      "third third third third";
+  }
+}
