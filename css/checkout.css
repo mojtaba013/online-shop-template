@@ -42,7 +42,7 @@
   width: 100%;
   background-color: rgb(121 56 242);
   color: rgb(255, 255, 255);
-  border-radius: 0.5rem;
+
   font-family: inherit;
 }
 
@@ -68,6 +68,54 @@
   margin: 0 1rem 0 1rem;
 }
 
+.btn {
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.5rem 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: var(--color-btn);
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.auth,
+.info,
+.save {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.d1,
+.d2 {
+  top: 12px;
+  right: calc(-50% + 20px);
+  left: calc(50% + 20px);
+  position: absolute;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+.s1,
+.s2 {
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: block;
+  border-color: #bdbdbd;
+}
+
 @media screen and (min-width: 640px) {
   .name,
   .email,
@@ -86,5 +134,6 @@
     grid-template-areas:
       "first first first second"
       "third third third third";
+      padding: 1rem 2rem;
   }
 }
