@@ -1,77 +1,112 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/cart.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
-</head>
+  <body>
+    <section class="navbar">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="1">
+            <div class="nav__toggler">
+              <div class="bar bar-one"></div>
+              <div class="bar bar-two"></div>
+              <div class="bar bar-three"></div>
+            </div>
+            <ul class="list nav__list">
+              <li class="nav__item"><a href="main.html">خانه</a></li>
+              <li class="nav__item">
+                <a href="cart.html"> سبد خرید استاتیک</a>
+              </li>
+              <li class="nav__item">
+                <a href="checkout.html">مشخصات محصول خریداری شده</a>
+              </li>
+              <li class="nav__item">
+                <a href="home.html">اولین صفحه کسشعر</a>
+              </li>
 
-<body>
-  <div class="main">
-    <section class="right">
-      <section class="right-container">
-        <div class="main-img">
-          <img src="images/React.svg" alt="" />
+              <li class="nav__item"><a href="">درباره ما</a></li>
+            </ul>
+          </div>
+
+          <span class="cart-btn">
+            <i class="fas fa-cart-plus"></i>
+            <span class="cart-items">0</span>
+          </span>
         </div>
-        <div class="main-desc">
-          <p>دوره متخصص جاوااسکریپت</p>
-          <div class="flex-primary">
-            <i class="fa-solid fa-check checkmark"></i>
-            <p>پشتیبانی مادام العمر</p>
-
-          </div>
-          <div class="flex-primary">
-            <i class="fa-solid fa-check checkmark"></i>
-            <p>آپدیت رایگان دوره</p>
-          </div>
-          <div class="flex-primary">
-            <i class="fa-solid fa-check checkmark"></i>
-            <p>دوره پروژه محور</p>
-          </div>
-          <div class="flex-primary">
-            <i class="fa-solid fa-check checkmark"></i>
-            <p>مدت زمان دانلود نامحدود</p>
-          </div>
-          <p> 2590000 تومان </p>
-
-        </div>
-        <div class="main-counter">
-          <div class="counter-container">
-            <button class="btn-counter-plus">+</button>
-            <span>1</span>
-            <i class="fa-solid fa-trash-can trash-icon"></i>
-          </div>
-
-        </div>
-      </section>
+      </nav>
     </section>
-    <section class="left">
-      <div class="left-container">
-        <div class="flex text_detail">
-          <p>قیمت کالاها</p>
-          <p>1280000</p>
-        </div>
-        <div class="flex text_detail">
-          <p>تخفیف کالاها</p>
-          <p>0</p>
-        </div>
-        <div class="line"></div>
-        <div class="flex total">
-          <p>مجموع </p>
-          <p>1280000</p>
-        </div>
-        <div>
-          <button class="btn">ادامه سفارش</button>
-        </div>
+    <script src="JS/main.js"></script>
+    <section class="content">
+      <div class="main">
+        <section class="right">
+          <section class="right-container">
+            <div class="main-img">
+              <img src="images/React.svg" alt="" />
+            </div>
+            <div class="main-desc">
+              <p>دوره متخصص جاوااسکریپت</p>
+              <div class="flex-primary">
+                <i class="fa-solid fa-check checkmark"></i>
+                <p>پشتیبانی مادام العمر</p>
+              </div>
+              <div class="flex-primary">
+                <i class="fa-solid fa-check checkmark"></i>
+                <p>آپدیت رایگان دوره</p>
+              </div>
+              <div class="flex-primary">
+                <i class="fa-solid fa-check checkmark"></i>
+                <p>دوره پروژه محور</p>
+              </div>
+              <div class="flex-primary">
+                <i class="fa-solid fa-check checkmark"></i>
+                <p>مدت زمان دانلود نامحدود</p>
+              </div>
+              <p>2590000 تومان</p>
+            </div>
+            <div class="main-counter">
+              <div class="counter-container">
+                <button class="btn-counter-plus">+</button>
+                <span>1</span>
+                <i class="fa-solid fa-trash-can trash-icon"></i>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="left">
+          <div class="left-container">
+            <div class="flex text_detail">
+              <p>قیمت کالاها</p>
+              <p>1280000</p>
+            </div>
+            <div class="flex text_detail">
+              <p>تخفیف کالاها</p>
+              <p>0</p>
+            </div>
+            <div class="line"></div>
+            <div class="flex total">
+              <p>مجموع</p>
+              <p>1280000</p>
+            </div>
+            <div>
+              <button class="btn">ادامه سفارش</button>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
-  </div>
-</body>
-
+  </body>
 </html>

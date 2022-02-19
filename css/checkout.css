@@ -1,10 +1,20 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.container {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .main {
+  width: 100%;
+  max-width: 1170px;
   gap: 1rem;
   display: grid;
   grid-template-columns: repeat(4, minmax(1fr));
@@ -13,7 +23,9 @@
     "first"
     "second"
     "third";
-    margin: 0.5rem;
+  /* margin: 0.5rem; */
+  /* padding: 1rem; */
+  margin: 1rem auto;
 }
 
 .first {
@@ -21,7 +33,6 @@
   border: 1px solid rgba(229, 229, 229, 1);
   border-radius: 0.5rem;
   padding: 1rem;
-  
 }
 
 .second {
@@ -40,7 +51,6 @@
 
 .first > p,
 .second > p {
-  
   font-size: 1.125rem;
 }
 
@@ -59,9 +69,8 @@
   line-height: 1.43;
   /* margin:  0.5rem; */
 }
-.product{
+.second__product {
   margin-bottom: 1rem;
-  
 }
 .total {
   margin-bottom: 1rem;
@@ -76,7 +85,7 @@
 
 .text-gray-700 {
   --tw-text-opacity: 1;
-  color: rgba(64,64,64,var(--tw-text-opacity));
+  color: rgba(64, 64, 64, var(--tw-text-opacity));
   margin-bottom: 1rem;
 }
 
@@ -90,7 +99,6 @@
 .total.detail {
   font-weight: 700;
   font-size: 0.875rem;
-  
 }
 
 .btn {
@@ -108,6 +116,8 @@
   flex-direction: row;
   position: relative;
   margin: 2rem 0;
+  width: 100%;
+  max-width: 1170px;
 }
 
 .auth,
@@ -155,19 +165,20 @@
   .flex.name,
   .flex.email,
   .flex.mobile {
-    justify-content: flex-start;   
+    justify-content: flex-start;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .main {    
+  .main {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
     grid-template-areas:
       "first first first second"
       "third third third third";
-    padding: 1rem 2rem;
+    /* padding: 1rem; */
+    max-width: 1170px;
+    width: 100%;
   }
-
 }

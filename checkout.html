@@ -1,82 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/checkout.css">
-    <link rel="stylesheet" href="css/fonts.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <div class="status">
+  <body>
+    <section class="navbar">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="1">
+            <div class="nav__toggler">
+              <div class="bar bar-one"></div>
+              <div class="bar bar-two"></div>
+              <div class="bar bar-three"></div>
+            </div>
+            <ul class="list nav__list">
+              <li class="nav__item"><a href="main.html">خانه</a></li>
+              <li class="nav__item"><a href="cart.html"> سبد خرید استاتیک</a></li>
+              <li class="nav__item">
+                <a href="checkout.html">مشخصات محصول خریداری شده</a>
+              </li>
+              <li class="nav__item">
+                <a href="home.html">اولین صفحه کسشعر</a>
+              </li>
+
+              <li class="nav__item"><a href="">درباره ما</a></li>
+            </ul>
+          </div>
+
+          <span class="cart-btn">
+            <i class="fas fa-cart-plus"></i>
+            <span class="cart-items">0</span>
+          </span>
+        </div>
+      </nav>
+    </section>
+    <script src="JS/main.js"></script>
+    <div class="container">
+      <div class="status">
         <div class="auth">
-
-            <span class="iconNumber">1</span>
-            <span>احراز هویت</span>
+          <span class="iconNumber">1</span>
+          <span>احراز هویت</span>
         </div>
         <div class="info">
-            <div class="d1">
-                <span class="s1"></span>
-            </div>
-            <span class="iconNumber">2</span>
-            <span>تکمیل فرم</span>
+          <div class="d1">
+            <span class="s1"></span>
+          </div>
+          <span class="iconNumber">2</span>
+          <span>تکمیل فرم</span>
         </div>
         <div class="save">
-            <div class="d2">
-                <span class="s2"></span>
-            </div>
-            <span class="iconNumber">3</span>
-            <span>ثبت سفارش</span>
+          <div class="d2">
+            <span class="s2"></span>
+          </div>
+          <span class="iconNumber">3</span>
+          <span>ثبت سفارش</span>
         </div>
-    </div>
-    <div class="main">
+      </div>
+      <div class="main">
         <section class="first">
-            <p class="text-gray-700">جزییات صورت حساب</p>
-            <div class="flex name">
-                <p>نام</p>
-                <p>مجتبی کجوری</p>
-            </div>
-            <div class="flex email">
-                <p>ایمیل</p>
-                <p>kahroba013@yahoo.com</p>
-            </div>
-            <div class="flex mobile">
-                <p>شماره موبایل</p>
-                <p>09398516343</p>
-            </div>
+          <p class="text-gray-700">جزییات صورت حساب</p>
+          <div class="flex name">
+            <p>نام</p>
+            <p>مجتبی کجوری</p>
+          </div>
+          <div class="flex email">
+            <p>ایمیل</p>
+            <p>kahroba013@yahoo.com</p>
+          </div>
+          <div class="flex mobile">
+            <p>شماره موبایل</p>
+            <p>09398516343</p>
+          </div>
         </section>
         <section class="second border-gray-200">
-            <p class="text-gray-700">سفارش شما</p>
-            <div class="flex product  border-b border-gray-200">
-                <p>محصول</p>
-                <p>جمع جزء</p>
-            </div>
-            <div class="flex">
-                <p>دوره جامع جاوا اسکریپت</p>
-                <p>1598000 تومان</p>
-            </div>
-            <div class="flex">
-                <p>دوره Git_GitHub</p>
-                <p>1598000 تومان</p>
-            </div>
-            <div class="flex">
-                <p>دوره React</p>
-                <p>1598000 تومان</p>
-            </div>
-            <div class="flex border-b border-gray-200">
-                <p>مجموع</p>
-                <p> تومان1697000</p>
-            </div>
+          <p class="text-gray-700">سفارش شما</p>
+          <div class="flex second__product border-b border-gray-200">
+            <p>محصول</p>
+            <p>جمع جزء</p>
+          </div>
+          <div class="flex">
+            <p>دوره جامع جاوا اسکریپت</p>
+            <p>1598000 تومان</p>
+          </div>
+          <div class="flex">
+            <p>دوره Git_GitHub</p>
+            <p>1598000 تومان</p>
+          </div>
+          <div class="flex">
+            <p>دوره React</p>
+            <p>1598000 تومان</p>
+          </div>
+          <div class="flex border-b border-gray-200">
+            <p>مجموع</p>
+            <p>تومان1697000</p>
+          </div>
         </section>
         <section class="third">
-            <p>پرداخت امن زرین پال</p>
-            <button class="btn">ثبت سفارش</button>
+          <p>پرداخت امن زرین پال</p>
+          <button class="btn">ثبت سفارش</button>
         </section>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
