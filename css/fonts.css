@@ -12,6 +12,13 @@
     src: url('/fonts/iransans.woff');
 }
 
+@font-face {
+    font-family: 'iransans.woff';
+    font-weight: 900;
+    font-style: normal;
+    src: url('/fonts/iransans.woff');
+}
+
 body,button{
     font-family: 'iransans.woff';
 }
